@@ -1,0 +1,65 @@
+*{
+    transition: all 0.4s;
+}
+.lang-box{
+    display: inline-block;
+}
+.visualiy-hidden{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+.box{
+    position: relative;
+    /* display: inline-block; */
+    padding: 3px;
+    width: 70px;
+    height: 36px;
+    background: #DCE6FF;
+    border-radius: 39px;
+    text-align: center;
+    z-index: 1;
+}
+.con1{
+    position:absolute;
+    left: 8px;
+    bottom: 12px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 12px;
+    text-align: center;
+    color: #000000;
+}
+.con2{
+    position:absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #A6A6A6;
+}
+.circle{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    z-index: -1;
+    margin: auto 0;
+    left:35px;
+}
+.lang-cheked:checked ~ .circle{
+    transform: translateX(-32px);
+}
+.lang-cheked:checked ~ .con2{
+    color: #000000;
+}
+.lang-cheked:checked ~ .con1{
+    color: #A6A6A6;
+}

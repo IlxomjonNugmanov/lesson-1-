@@ -4,6 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/language.css">
     <title>about</title>
 </head>
 <body>
@@ -22,10 +23,16 @@
                    </div>
                    <form class="header-form" action="echo.htmlacademy.ru" method="get">
                        <input class="search-header" type="search" name="search" placeholder="Поиск" aria-label="search">
-                       <label for="uz">Uz</label>
-                       <input type="radio" name="leng" id="uz">
-                       <input type="radio" name="leng" id="ru" checked>
-                       <label for="ru">Ru</label>
+                       <div class="lang-box">
+                        <label>
+                            <div class="box">
+                                <input class="visualiy-hidden lang-cheked " type="checkbox" name="lang" id="" >
+                                <span class="con1">УЗ</span>
+                                <span class="circle"></span>
+                                <span class="con2">РУ</span>
+                            </div>
+                        </label>
+                    </div>
                        <input class="btn" type="button" value="Войти" >
                        
                    </form>
@@ -66,21 +73,19 @@
                         <li class="iteam-header">
                             <a class="link-header" href="#">Наука</a>
                         </li>
+                        <li class="iteam-header">
+                            <a class="link-header" href="./cantact.html">Cantact</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-    <aside class="site-aside">
-        <div class="container">
-           <img class="aside-img" src="./img/optimize 1.png" alt="shopme telephones" width="1200" height="128">
-        </div>
-    </aside>
     <section class="section-world">
         <div class="container">
-            <div class="section-world__wrapper">
+            <div class="section-world__wrapper" >
                 <div class="world__card-wrapper">
-                    <div class="card-wrapper__left">
+                    <div class="card-wrapper__left article_line">
                         <h2 class="section-world__title">Илон Маск принял участие во Всемирной сетевой <br> конференции в Китае</h2>
                        <img src="./img/car.article.png" alt="black car" width="100%">
                        <p>
@@ -88,9 +93,8 @@
                         </p>
                         <p>
                          Они будут храниться только в самом Китае и поэтому будут доступны правительству Поднебесной в любой момент.
-                        
-                        <p>
                         </p>
+                        <p>
                           Новые заявления Илон Маск сделал во время видеообращения к аудитории мероприятия World Internet Conference, которое прошло в конце недели в Поднебесной. Компанию ему составили руководители Cisco Systems (Чак Роббинс), Intel (Пэт Гелсингер) и Qualcomm (Кристиано Амон), а интересы бизнеса Китайской Народной Республики представляли руководители Alibaba и Xiaomi. 
                         </p>
                         <p>
@@ -139,6 +143,29 @@
 
         </div>
 
+    </section>
+    <section>
+        <div class="container">
+            <div class="article-footer">
+                <h2>
+                    По вашим интересам
+                </h2>
+                <div class="article-footer__wrapper">
+                   <div class="article-footer__card">
+                       <h3 class="card__world__title">Стали известны ёмкости аккумуляторов всех моделей iPhone 13</h3>
+                       <p class="card__world__p">Во время презентации iPhone 13 Apple придала большое значения...</p>
+                   </div>
+                   <div class="article-footer__card">
+                       <h3 class="card__world__title">Стали известны ёмкости аккумуляторов всех моделей iPhone 13</h3>
+                       <p class="card__world__p">Во время презентации iPhone 13 Apple придала большое значения...</p>
+                   </div>
+                   <div class="article-footer__card">
+                       <h3 class="card__world__title">Стали известны ёмкости аккумуляторов всех моделей iPhone 13</h3>
+                       <p class="card__world__p">Во время презентации iPhone 13 Apple придала большое значения...</p>
+                   </div>
+                </div>
+            </div>
+        </div>
     </section>
     <footer class="site-footer">
         <div class="container">

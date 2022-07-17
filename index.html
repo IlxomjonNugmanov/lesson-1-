@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/language.css">
     <title>Namanganliklar24</title>
 </head>
 <body>
@@ -22,13 +23,18 @@
                       </div>
                    </div>
                    <form class="header-form" action="echo.htmlacademy.ru" method="get">
-                       <input class="search-header" type="search" name="search" placeholder="Поиск" aria-label="search">
-                       <label for="uz">Uz</label>
-                       <input type="radio" name="leng" id="uz">
-                       <input type="radio" name="leng" id="ru" checked>
-                       <label for="ru">Ru</label>
-                       <input class="btn" type="button" value="Войти" >
-                       
+                    <input class="search-header" type="search" name="search" placeholder="Поиск" aria-label="search">
+                    <div class="lang-box">
+                        <label>
+                            <div class="box">
+                                <input class="visualiy-hidden lang-cheked " type="checkbox" name="lang" id="" >
+                                <span class="con1">УЗ</span>
+                                <span class="circle"></span>
+                                <span class="con2">РУ</span>
+                            </div>
+                        </label>
+                    </div>
+                    <input class="btn" type="button" value="Войти">
                    </form>
                 </div>
            </div>
@@ -66,6 +72,9 @@
                         </li>
                         <li class="iteam-header">
                             <a class="link-header" href="#">Наука</a>
+                        </li>
+                        <li class="iteam-header">
+                            <a class="link-header" href="./cantact.html">Cantact</a>
                         </li>
                     </ul>
                 </div>
